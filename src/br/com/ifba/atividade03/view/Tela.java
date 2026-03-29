@@ -121,8 +121,14 @@ public class Tela extends javax.swing.JFrame {
 
     private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
         // TODO add your handling code here:
+         
+        // Obtém o ano de nascimento digitado no campo txtAN e converte para inteiro
         int an = Integer.parseInt(txtAN.getValue().toString());
+        
+        // Calcula a idade subtraindo o ano de nascimento do ano atual (2026)
         int id = 2026 - an;
+        
+        // Exibe a idade calculada no label lblIdade
         lblIdade.setText(Integer.toString(id));
     }//GEN-LAST:event_btnCalcActionPerformed
 
