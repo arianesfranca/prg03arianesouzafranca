@@ -11,7 +11,8 @@ package br.com.ifba.atividade05.view;
 public class Fatorial {
     //guarda número digitado por usuário 
     private int valor;
-    //método que recebe e salva o num digitado 
+    //método que recebe e salva o num digitado
+    //método
     public void setValor(int n){
         this.valor = n;
     }
