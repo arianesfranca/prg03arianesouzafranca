@@ -10,10 +10,16 @@ package br.com.ifba.atividade06.view;
  */
 public class Main {
    public static void main(String[] args) {
+        // Cria um objeto (instância) da classe ContaBanco
        ContaBanco p1 = new ContaBanco ();
-       p1.setNumConta(1111);
-       p1.setDono("Jubileu");
+        // Define o número da conta
+       p1.setNumConta(1234);
+        // Define o nome do dono da conta
+       p1.setDono("Perolina");
+        // Abre a conta do tipo CC (Conta Corrente)
+       // Isso também ativa a conta e define saldo inicial (50)
        p1.abrirConta("CC");
+        // Exibe todas as informações da conta
        p1.estadoAtual();
        
    }
