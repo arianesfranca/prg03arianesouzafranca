@@ -5,29 +5,44 @@
 package br.com.ifba.atividade07.view;
 
 /**
- *
+ * Classe que representa um pagamento realizado com cartão.
+ * Implementa a interface Pagamento.
+ * 
  * @author ariia
  */
 public class PagamentoCartao implements Pagamento {
 
-    private double valor;
+    // Valor original da compra (imutável após ser definido)
+    private final double valor;
     
+    /**
+     * Construtor da classe PagamentoCartao
+     * @param valor Valor da compra
+     */
     public PagamentoCartao(double valor) {
         this.valor = valor;
     }
+
+    /**
+     * Calcula o valor total com taxa de 5% para pagamento no cartão
+     * @return valor final com acréscimo
+     */
     @Override
     public double calcularTotal() {
-        return valor * 1.05;
+        return valor * 1.05; // adiciona 5% de taxa
     }
 
+    /**
+     * Imprime o recibo do pagamento no console
+     */
     @Override
     public void imprimirRecibo() {
         System.out.println("-----------RECIBO--------------");
-        System.out.println("Forma de pagamento: Cartão");
-        System.out.println("Valor original: R$ %.2f%n", valor);
-        System.out.println("Taxa aplicada: 5%");
-        System.out.println("Valor final: R$ %.2f%n", calcularTotal());
-        System.out.println("-------------------------");
+        System.out.printf("Forma de pagamento: Cartão\n");
+        System.out.printf("Valor original: R$ %.2f%n", valor);
+        System.out.printf("Taxa aplicada: 5%%\n"); // %% para mostrar %
+        System.out.printf("Valor final: R$ %.2f%n", calcularTotal());
+        System.out.printf("-------------------------\n");
     }
     
 }
