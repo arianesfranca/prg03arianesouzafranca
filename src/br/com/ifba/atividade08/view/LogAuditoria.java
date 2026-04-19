@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package br.com.ifba.atividade08.view;
-import java.time.LocalDateTime;
+import java.time.LocalDateTime; 
 
 /**
  *
@@ -11,18 +11,16 @@ import java.time.LocalDateTime;
  */
 public class LogAuditoria {
 
-    LogAuditoria(Object object, Usuario aThis, String acao, LocalDateTime now, String string) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
      private Long id;
      private Usuario usuario;
      private String acao;
-     private LocalDataTime dataHora;
+     private LocalDateTime dataHora;
      private String ip;
      
      public LogAuditoria(){}
      
-     public LogAuditoria(Long id, Usuario usuario, String acao, LocalDataTime dataHora, String ip) {
+     public LogAuditoria(Long id, Usuario usuario, String acao, LocalDateTime dataHora, String ip) {
         this.id = id;
         this.usuario = usuario;
         this.acao = acao;
@@ -54,11 +52,11 @@ public class LogAuditoria {
         this.acao = acao;
     }
 
-    public LocalDataTime getDataHora() {
+    public LocalDateTime getDataHora() {
         return dataHora;
     }
 
-    public void setDataHora(LocalDataTime dataHora) {
+    public void setDataHora(LocalDateTime dataHora) {
         this.dataHora = dataHora;
     }
 

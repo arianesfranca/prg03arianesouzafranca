@@ -10,9 +10,8 @@ package br.com.ifba.atividade08.view;
  */
 public class Sessao {
 
-    Sessao(Object object, Usuario aThis, String token) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+   
+    
   private Long id;
   private Usuario usuario;
   private String token;

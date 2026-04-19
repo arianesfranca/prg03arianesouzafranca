@@ -53,12 +53,16 @@ public class PerfilUsuario {
         this.permissoes = permissoes;
     }
     
+    /**
+     *
+     * @return
+     */
     @Override
-    public String toString(){
-        return "PerfilUsuario{" +
-                "id=" +
-                ", descricao'" + descricao + '\'' +
-                ", permissoes=" + permissoes + 
-                '}';
-    }
+    public String toString() {
+    return "PerfilUsuario{" +
+           "id=" + id +
+           ", descricao='" + descricao + '\'' +
+           ", permissoes=" + permissoes +
+           '}';
+}
 }
