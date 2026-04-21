@@ -9,5 +9,7 @@ package br.com.ifba.atividade09.view;
  * @author ariia
  */
 public abstract class Forma2D extends Forma {
+    
+     // Obriga as subclasses a calcularem a área
     public abstract double obterArea();
 }

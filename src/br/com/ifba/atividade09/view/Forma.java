@@ -10,6 +10,7 @@ package br.com.ifba.atividade09.view;
  */
 public abstract class Forma {
 
+    // Obriga todas as subclasses a descreverem o objeto
     @Override
     public abstract String toString();
     

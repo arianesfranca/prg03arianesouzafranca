@@ -5,22 +5,26 @@
 package br.com.ifba.atividade09.view;
 
 /**
- *
+ * Representa um Círculo.
  * @author ariia
  */
 public class Circulo extends Forma2D {
-    private double raio;
+
+    private double raio; // raio do círculo
 
     public Circulo(double raio) {
         this.raio = raio;
     }
+
+    // Calcula a área: π × raio²
     @Override
     public double obterArea() {
-      return Math.PI * raio * raio;
+        return Math.PI * raio * raio;
     }
 
+    // Retorna a descrição do objeto
     @Override
     public String toString() {
-        return "Circulo com raio" + raio;
+        return "Circulo com raio " + raio;
     }
 }
